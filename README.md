@@ -1,1 +1,1 @@
-# functional-programming-in-lean
+This repository contains my work while studying the Functional Programming in Lean book.
