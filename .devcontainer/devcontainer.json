@@ -1,0 +1,14 @@
+{
+	"name": "Functional Programming in Lean",
+	"postCreateCommand": "bash .devcontainer/postCreate.sh",
+	"remoteEnv": {
+		"PATH": "${containerEnv:PATH}:${containerEnv:HOME}/.elan/bin"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"leanprover.lean4"
+			]
+		}
+	}
+}
