@@ -1,14 +1,13 @@
 {
-	"name": "Functional Programming in Lean",
-	"postCreateCommand": "bash .devcontainer/postCreate.sh",
-	"remoteEnv": {
-		"PATH": "${containerEnv:PATH}:${containerEnv:HOME}/.elan/bin"
-	},
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"leanprover.lean4"
-			]
-		}
-	}
+  "name": "Functional Programming in Lean",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "postCreateCommand": "bash .devcontainer/postCreate.sh",
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:/home/vscode/.elan/bin"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["leanprover.lean4"]
+    }
+  }
 }
